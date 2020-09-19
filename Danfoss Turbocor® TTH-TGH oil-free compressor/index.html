@@ -31,7 +31,7 @@
                   ios-src="https://cdn.glitch.com/bc9e4b0e-ead7-4141-817c-1ba6f3163163%2FTTH325_Solid04.usdz?v=1600509445302"
                   alt=""
                   shadow-intensity="0"
-				 id="viewer-singleton"
+				 
                   camera-controls
 				  camera-orbit="90deg 75deg 12m"
 				  safari chrome
@@ -54,17 +54,7 @@
   <script nomodule
       src="js/model-viewer-legacy.js">
   </script>
-  <script>
-        (() => {
-          var checkExist = setInterval(function() {
-           if (document.querySelector("#viewer-singleton") != null) {
-              modelViewer = document.querySelector("#viewer-singleton");
-              modelViewer.activateAR();
-              clearInterval(checkExist);
-           }
-        }, 100);
-        })();
-    </script>
+  
   
 
 </body>
